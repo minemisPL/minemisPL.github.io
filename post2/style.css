@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+body a:link, a:visited{
+    color: #0066FF;
+    text-decoration: none;
+}
+
+#header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+#main_content {
+    color: white;
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 25px;
+}
+
+#secondTitle {
+    font-size: 30px;
+    text-align: center;
+}
+
+.component {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+#imageAndVideo {
+    background-image: url("media/low-poly-grid-haikei-orange.svg");
+    aspect-ratio: 1200/700;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#buttonsTitle {
+    font-size: 50px;
+}
+
+.blue {
+    background: #0066FF;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.green {
+    background: #13e89a;
+}
+
+.darkgrey {
+    background: #343442;
+}
+
+.darkblue {
+    background: #002233;
+}
+
+.orange {
+    background: #d7a126;
+}
+
+.spacer {
+    aspect-ratio: 1000/200;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("media/wave-haikei.svg");
+}
+
+.layer2 {
+    background-image: url("media/wave-haikei2.svg");
+}
+
+.layer3 {
+    background-image: url("media/layered-waves-haikei-orange.svg");
+}
+.button {
+    float: left;
+    margin: 10px;
+}
+
+#buttonsContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#bro_p{
+    margin-top: -40px;
+    font-size: 15px;
+}
+
+.dashed_box{
+    font-family: "Ink Free", "MV Boli", fantasy;
+    color: black;
+    width: fit-content;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: dashed;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto auto 300px;
+    transition: 0.3s;
+
+    animation: colorAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.dashed_box:hover {
+    transform: scale(2, 2);
+}
+
+#animation {
+    transform: rotateZ(10deg);
+
+    margin-left: 30%;
+    margin-right: 30%;
+
+    animation: rotateABit;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorAnimation {
+    0% {border-color: #0066FF;}
+    20% {border-color: #13e89a;}
+    40% {border-color: #dd3f31;}
+    60% {border-color: #002233;}
+    80% {border-color: #d7a126;}
+    100% {border-color: #0066FF;}
+}
+
+@keyframes spin360 {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+
+@keyframes rotateABit {
+    0% {transform: rotateZ(10deg)}
+    50% {transform: rotateZ(-10deg)}
+    100% {transform: rotateZ(10deg)}
+}

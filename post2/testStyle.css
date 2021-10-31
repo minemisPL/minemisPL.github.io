@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue {
+    background: #1616e0;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.green {
+    background: #13e89a;
+}
+
+.darkgrey {
+    background: #202731;
+}
+
+.curve {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: #202731;
+    transform: translate(85%, 60%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: #1616e0;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+.spacer {
+    aspect-ratio: 1000/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("media/layered-waves-haikei.svg");
+}
