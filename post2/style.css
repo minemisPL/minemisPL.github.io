@@ -1,10 +1,29 @@
+:root {
+    --blue: #0066FF;
+    --red: #dd3f31;
+    --green: #13e89a;
+    --darkgrey: #343442;
+    --darkblue: #002233;
+    --darkerBlue: #001829;
+    --orange: #d7a126;
+    --purple: #7421c2;
+    --red-orange: #FA7268;
+    --red-pink: #B0235F;
+    --dark-pink: #060c24;
+}
+
 body {
     margin: 0;
     font-family: "Prompt", sans-serif;
 }
 
+audio {
+    margin-top: 20px;
+    transform: rotateZ(3deg) scale(1.5, 1.5);
+}
+
 body a:link, a:visited{
-    color: #0066FF;
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -34,11 +53,40 @@ body a:link, a:visited{
 .component {
     text-align: center;
     font-size: 30px;
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.component h2{
+    font-size: 60px;
+}
+
+#image {
+    transition: 0.3s;
+}
+
+#image:hover {
+    transform: rotateZ(4deg);
+}
+
+#video {
+    transition: 0.3s;
+}
+
+#video:hover {
+    transform: scale(1.2, 1.2);
 }
 
 #imageAndVideo {
     background-image: url("media/low-poly-grid-haikei-orange.svg");
+}
+
+#audioAndButtons {
+    background-image: url("media/polygon-scatter-haike-green2i.svg");
+    aspect-ratio: 1200/500;
+}
+
+.background {
     aspect-ratio: 1200/700;
     width: 100%;
     background-repeat: no-repeat;
@@ -51,27 +99,35 @@ body a:link, a:visited{
 }
 
 .blue {
-    background: #0066FF;
+    background: var(--blue);
 }
 
 .red {
-    background: #dd3f31;
+    background: var(--red);
 }
 
 .green {
-    background: #13e89a;
+    background: var(--green);
 }
 
 .darkgrey {
-    background: #343442;
+    background: var(--darkgrey);
 }
 
 .darkblue {
-    background: #002233;
+    background: var(--darkblue);
 }
 
 .orange {
-    background: #d7a126;
+    background: var(--orange);
+}
+
+.purple {
+    background: var(--purple);
+}
+
+.darkerBlue {
+    background: var(--darkerBlue);
 }
 
 .spacer {
@@ -93,6 +149,24 @@ body a:link, a:visited{
 .layer3 {
     background-image: url("media/layered-waves-haikei-orange.svg");
 }
+
+.layer4 {
+    background-image: url("media/stacked-waves-haikei-green.svg");
+}
+
+.layer5 {
+    background-image: url("media/layered-waves-haikei-green-to-blue.svg");
+}
+
+.layer6 {
+    background-image: url("media/layered-waves-haikei-dark-to-red.svg");
+}
+
+.layer7 {
+    background-image: url("media/layered-peaks-haikei-red-to-dark.svg");
+    aspect-ratio: 1200/400;
+}
+
 .button {
     float: left;
     margin: 10px;
@@ -115,13 +189,13 @@ body a:link, a:visited{
     font-family: "Ink Free", "MV Boli", fantasy;
     color: black;
     width: fit-content;
-    font-size: 24px;
+    font-size: 1.3vw;
     padding-left: 10px;
     padding-right: 10px;
     border-style: dashed;
     border-radius: 10px;
     background-color: white;
-    margin: auto auto 300px;
+    margin: auto auto;
     transition: 0.3s;
 
     animation: colorAnimation;
@@ -129,11 +203,41 @@ body a:link, a:visited{
     animation-iteration-count: infinite;
 }
 
+.coolParagraph {
+    color: white;
+    width: 40%;
+    border-color: var(--blue);
+    border-width: 20px;
+    font-size: 1.7vw;
+    padding: 60px;
+    border-style: dashed;
+    border-radius: 30px;
+    background-color: var(--darkerBlue);
+    outline: 20px solid var(--darkerBlue);
+    outline-offset: -16px;
+}
+
+#playedWithBasicsP {
+    margin: 120px 60px 60px;
+}
+
+#satisfiedP {
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+#ideasForButtonsP {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
 .dashed_box:hover {
     transform: scale(2, 2);
 }
 
 #animation {
+    color: white;
+
     transform: rotateZ(10deg);
 
     margin-left: 30%;
@@ -142,6 +246,33 @@ body a:link, a:visited{
     animation: rotateABit;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+#animationDiv {
+    background-image: url("media/symbol-scatter-haikei-darkblue.svg");
+    aspect-ratio: 1200/400;
+}
+
+#boxes {
+    background-image: url("media/stacked-steps-haikei-red-orange.svg");
+    aspect-ratio: 1200/800;
+    color: var(--darkerBlue);
+}
+
+#ending {
+    background: var(--dark-pink);
+    color: white;
+    padding: 10%;
+    margin: 0;
+    font-size: 1.2vm;
+}
+
+footer {
+    background: var(--darkblue);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 @keyframes colorAnimation {

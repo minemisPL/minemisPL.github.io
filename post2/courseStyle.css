@@ -1,0 +1,32 @@
+html {
+    background-size: cover;
+    background: linear-gradient(#1a1a38, #070717) no-repeat fixed center;
+}
+body {
+    color: white;
+}
+
+p {
+    font-family: "Ink Free", "MV Boli", fantasy;
+    /* font-style: italic; <- looks bad */
+    color: black;
+    width: 40%;
+    font-size: 18px;
+    padding: 20px;
+    border-style: dashed;
+    border-radius: 10px;
+    background-color: white;
+    transform: skew(50deg);
+
+    animation: pSkewAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pSkewAnimation {
+    0% {transform: skew(50deg)}
+    47% {transform: skew(-50deg)}
+    50% {transform: skew(-50deg)}
+    97% {transform: skew(50deg)}
+    100% {transform: skew(50deg)}
+}
