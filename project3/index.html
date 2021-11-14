@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList BFS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Prompt:wght@100&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFromJS.css">
+
+</head>
+<body>
+    <header>
+        <h1>Minemis's Todo List!</h1>
+    </header>
+
+    <form>
+        <label for="input_text"></label>
+        <input type="text" autocomplete="off" id="input_text" class="todo-input">
+
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="todo-filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <div class="buttonAndFooter">
+        <div class="clear-buttonDiv">
+            <button class="clear-button" type="reset">Clear everything</button>
+        </div>
+
+        <footer>
+            <p>Mateusz Dąbrowski &copy; 14 November 2021</p>
+        </footer>
+    </div>
+
+    <script type="module" src="script/app.js"></script>
+</body>
+</html>
