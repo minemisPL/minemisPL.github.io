@@ -1,0 +1,37 @@
+class Human {
+    null;
+    name;
+
+    constructor(name) {
+        this.name = name
+        this.null = null
+    }
+
+    set null(value) {
+        this.null = null
+    }
+
+    set setName(value) {
+        this.name = value + " jest kochana";
+    }
+
+    get null() {
+        return null
+    }
+}
+
+let anna = new Human()
+
+anna.setName = "Anna"
+console.log(anna.name)
+console.log(anna.null)
+
+let zdanie = [
+    () => console.log("Słuchaj"),
+    () => console.log("kurwa"),
+    () => console.log("szczylu"),
+    () => console.log("zajebany")]
+
+for (let i = 0; i < zdanie.length; i++) {
+    zdanie[i]()
+}

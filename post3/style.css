@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image-wrapper {
+    padding: 0;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.image-wrapper img {
+    height: 40vh;
+    max-height: 400px;
+}
+
+.text-over-image {
+    position: relative;
+    margin-top: max(-25vh, -280px);
+    font-size: min(5vh, 65px);
+    font-family: "Ink Free", sans-serif;
+    color: blue;
+}
+
+.content {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.5rem;
+    margin: 10rem 3rem;
+}
+
+.content h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.edit {
+    font-family: 'Comfortaa', cursive;
+    color: #525252;
+}
+
+footer {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto Light", sans-serif;
+    background-color: #0a0a72;
+    color: white;
+    padding: 2rem;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>I love Ania <3</h1>
+
+    <label>Enter your name:</label><br>
+    <input type="text" id="myText"><br>
+    <button type="button" id="myButton">Click here Bro</button>
+
+    <br><br>
+
+    <h1 id="title1"></h1>
+
+    <script src="script.js"></script>
+    <script src="Human.js"></script>
+</body>
+</html>

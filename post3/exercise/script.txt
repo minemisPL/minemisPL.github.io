@@ -1,0 +1,95 @@
+console.log("I really really love Ania <3")
+
+document.getElementById("myButton").onclick = function () {
+
+    let myName = document.getElementById("myText").value
+    console.log("Hello ", myName)
+
+    console.log(Number(myName))
+}
+
+function sayHello() {
+    console.log("Henlow <3")
+}
+
+sayHello()
+
+let anna1 = {
+    name: "Anna",
+    age: "16",
+
+    giveLove : function () {
+        console.log("Anna gives love to Mati")
+    }
+}
+
+console.log(anna1.name)
+console.log(anna1.age)
+anna1.giveLove()
+
+let message;
+
+function displayConsole(output) {
+    console.log(output)
+}
+
+function displayDOM(output) {
+    document.getElementById("title1").innerHTML = output
+}
+
+function setMessage(text, callback) {
+    message = text
+
+    callback(message)
+}
+
+setMessage("I love Anna <3", displayDOM)
+setMessage("Forever", displayConsole)
+
+let saySomething = function (text) {
+    console.log(text)
+}
+
+function login() {
+
+    let userName = "Anna"
+    let userInbox = 0;
+
+    function displayUserName() {
+        console.log("Hello,", userName)
+    }
+
+    function displayUserInbox() {
+        console.log("You have",userInbox,"new messages")
+    }
+
+    displayUserName()
+    displayUserInbox()
+}
+
+login()
+
+let score = function () {
+
+    let points = 0
+
+    return function () {
+        points++
+
+        return points
+    }
+}()
+
+console.log(score())
+console.log(score())
+console.log(score())
+
+let hello
+let x = "Yo"
+
+// hello = function (x) {
+//     return x + " World!"
+// }
+hello = x => x + " World!"
+
+console.log(hello(x))
